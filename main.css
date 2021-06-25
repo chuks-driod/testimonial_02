@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 590px 180px;
+    background-color: rgb(210, 241, 231);
+    height: 100vh;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 16px;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content-nav1 {
+    display: grid;
+    grid-template-columns: auto 180px;
+    grid-column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.daniel-clifford {
+    background-color: hsl(263, 55%, 52%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+.daniel-clifford .svg-icon {
+    position: absolute;
+    padding: 4px;
+    top: 16%;
+    right: 55%;   
+}
+
+.daniel-clifford h5 {
+    color:  hsl(210, 46%, 95%);
+    position: relative;
+}
+
+.daniel-clifford p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin: 20px 0 0 0;
+}
+
+.jonathan-walters {
+    background-color: hsl(217, 19%, 35%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+
+.jonathan-walters h5 {
+    color:  hsl(210, 46%, 95%);
+}
+
+.jonathan-walters p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin: 16px 0 5px 0;
+}
+ 
+.content-nav2 {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-column-gap: 16px;
+}
+
+.jeanette-harmon {
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+.jeanette-harmon h5 {
+    color: hsl(0, 1%, 32%);
+}
+
+.jeanette-harmon p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin: 16px 0 5px 0;
+}
+
+.patrick-abrams {
+    background-color:  hsl(219, 29%, 14%);
+    color: white;
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+.patrick-abrams h5 {
+    color: hsl(0, 17%, 91%);
+}
+
+.patrick-abrams p {
+    color: hsl(0, 0%, 81%);
+    margin: 16px 0 5px 0;
+    font-size: 10px;
+}
+
+.kira-whittle {
+    padding: 16px;
+    border: hidden;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.kira-whittle h5 {
+    color: hsl(0, 1%, 32%);
+}
+
+.kira-whittle p {
+    color: hsl(0, 0%, 81%);
+    font-size: 10px;
+    margin: 16px 0 5px 0;
+}
+
+td img {
+    width: 25px;
+    margin-right: 8px;
+    border: hidden;
+    border-radius: 50%;
+}
+
+.td {
+    color: hsl(0, 24%, 96%);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.td1 {
+    color: hsl(0, 0%, 50%);
+}
+
+tr span {
+    color: hsl(0, 0%, 81%);
+    display: block;
+    font-weight: normal;
+    font-size: 10px;
+}
+ 
+@media only screen and (max-width: 375px) {
+    .main-section {
+        grid-template-columns: 350px;
+        grid-column-gap: unset;
+        height: 180vh;
+        padding-bottom: 70%;
+    }
+    
+    .content {
+        grid-template-columns: unset;
+        margin-bottom: 16px;
+    }
+
+    .content-nav1 {
+        grid-template-columns: unset;
+        grid-column-gap: unset;
+    }
+
+    
+    .daniel-clifford .svg-icon {
+        position: absolute;
+        padding-top: 6px;
+        top: 4%;
+        right: 20%;   
+    }
+
+    .jonathan-walters {
+        margin-top: 16px;
+    }
+
+    .content-nav2 {
+        grid-template-columns: unset;
+    }
+
+    .patrick-abrams {
+        margin-top: 16px;
+    }
+}
